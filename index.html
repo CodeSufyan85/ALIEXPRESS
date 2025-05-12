@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AliExpress Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  
+  <!-- Header will go here -->
+<header class="bg-white shadow p-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    
+    <!-- Logo -->
+    <div class="text-2xl font-bold text-red-600">AliExpress</div>
+    
+    <!-- Search bar -->
+    <div class="flex-1 mx-4">
+      <input type="text" placeholder="Search for products"
+             class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400" />
+    </div>
+    
+    <!-- Icons -->
+    <div class="flex space-x-4 text-gray-600">
+      <button>Cart</button>
+      <button>Account</button>
+    </div>
+  </div>
+</header>
+
+
+<!-- Category Navigation -->
+<nav class="bg-red-600 text-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-wrap items-center justify-between py-2">
+      
+      <!-- Category Links -->
+      <div class="flex flex-wrap space-x-4 text-sm font-medium">
+        <a href="#" class="hover:underline">Women's Fashion</a>
+        <a href="#" class="hover:underline">Men's Fashion</a>
+        <a href="#" class="hover:underline">Phones</a>
+        <a href="#" class="hover:underline">Electronics</a>
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline hidden md:inline">Toys</a>
+        <a href="#" class="hover:underline hidden md:inline">Beauty</a>
+        <a href="#" class="hover:underline hidden lg:inline">Sports</a>
+      </div>
+      
+      <!-- Hamburger for Mobile (optional, future step) -->
+      <!-- You can add a hamburger menu here for smaller screens -->
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Hero Section -->
+<section class="mt-4">
+  <div class="max-w-7xl mx-auto px-4">
+    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+         alt="Deals Banner"
+         class="w-full rounded-lg shadow-md object-cover h-64 md:h-96" />
+  </div>
+</section>
+
+<!-- Featured Products -->
+<section class="py-8">
+  <div class="max-w-7xl mx-auto px-4">
+    
+    <h2 class="text-2xl font-semibold mb-6">Featured Products</h2>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      
+      <!-- Product 1 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7427afbd4a5241d199762bd8caa10c52g.jpg_220x220q75.jpg_.avif" alt="Product 1" class="w-full h-40 object-cover mb-2 rounded" />
+        <h3 class="text-sm font-medium mb-1">Wireless Earbuds</h3>
+        <p class="text-red-600 font-semibold">$19.99</p>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/See659c8e9b334c96bbb73fa69386ea32y.jpg_220x220q75.jpg_.avif" alt="Product 2" class="w-full h-40 object-cover mb-2 rounded" />
+        <h3 class="text-sm font-medium mb-1">Smart Watch</h3>
+        <p class="text-red-600 font-semibold">$29.99</p>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sfd83a7c4e60b4f72965c1025493a30cay.jpg_220x220q75.jpg_.avif" alt="Product 3" class="w-full h-40 object-cover mb-2 rounded" />
+        <h3 class="text-sm font-medium mb-1">Bluetooth Speaker</h3>
+        <p class="text-red-600 font-semibold">$14.99</p>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Hf5aad642fdd344499164aa03341f39cdF.jpg_220x220q75.jpg_.avif" alt="Product 4" class="w-full h-40 object-cover mb-2 rounded" />
+        <h3 class="text-sm font-medium mb-1">USB Charger</h3>
+        <p class="text-red-600 font-semibold">$7.99</p>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5f5b8d6d800c414fb07d408b5318ebe0k.png_220x220.png_.avif" alt="Product 5" class="w-full h-40 object-cover mb-2 rounded" />
+        <h3 class="text-sm font-medium mb-1">LED Strip Lights</h3>
+        <p class="text-red-600 font-semibold">$11.49</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white mt-12">
+  <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+
+    <!-- About -->
+    <div>
+      <h4 class="font-semibold mb-2">About</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+      </ul>
+    </div>
+
+    <!-- Help -->
+    <div>
+      <h4 class="font-semibold mb-2">Help</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">Customer Service</a></li>
+        <li><a href="#" class="hover:underline">Returns</a></li>
+        <li><a href="#" class="hover:underline">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Policy -->
+    <div>
+      <h4 class="font-semibold mb-2">Policies</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline">Terms of Use</a></li>
+        <li><a href="#" class="hover:underline">Shipping Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Follow Us -->
+    <div>
+      <h4 class="font-semibold mb-2">Follow Us</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">Facebook</a></li>
+        <li><a href="#" class="hover:underline">Instagram</a></li>
+        <li><a href="#" class="hover:underline">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="bg-gray-900 text-center text-xs text-gray-400 py-4">
+    &copy; 2025 AliExpress Clone. All rights reserved.
+  </div>
+</footer>
+
+
+</body>
+</html>
